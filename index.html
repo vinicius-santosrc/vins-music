@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vins Music</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation-logo">
+            <h1 class="navigation-logo-vins">VINS&nbsp;</h1><h1 class="navigation-logo-music">MUSIC</h1>
+        </div>
+        <div class="navigation-input-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Buscar">
+        </div>
+        <div class='navigation-acess-rap'>
+            <h1 class="navigation-acess-rap-titulo">Acesso Rápido</h1>
+            <div class="navigation-acess-rap-options">
+                <a href=""><div class="navigation-acess-rap-options-card">
+                    <p>Playlists</p>
+                </div></a>
+                <a href=""><div class="navigation-acess-rap-options-card">
+                    <p>Albuns</p>
+                </div></a>
+                <a href=""><div class="navigation-acess-rap-options-card">
+                    <p>Artistas</p>
+                </div></a>
+            </div>
+            <div class='navigation-acess-rap-opt-playlist'>
+                <a href="">
+                <div class='navigation-acess-rap-opt-playlist-card card-playlist-acess'>
+                    <div class="navigation-acess-rap-opt-playlist-card-titles">
+                        <h1>Músicas curtidas</h1>
+                        <p>Playlist - XX músicas</p>
+                    </div>
+                    <div class="navigation-acess-rap-opt-playlist-card-img">
+                        <img src="imgs/favorite-musics-logo.webp" alt="">
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="navigation-acess-rap-opt-playlist-warning">
+                <p>Curta playlists para aparecer no acesso rápido</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="music-player">
+        
+        <div class="music-player-display">
+            <div class="music-player-left">
+                <div class="music-player-img track-art">
+                    <img src="" alt="">
+                </div>
+                <div class="music-player-name">
+                    <h1 class="track-name">Nome música</h1>
+                    <p class="track-artist">Autor</p>
+                    <div class="music-player-bar slider_container">
+                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                    </div>
+                </div>
+            </div>
+            <div class="music-player-right">
+                <div class="music-player-buttons slider_container" >
+                    <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+                    <label><i class="fa-solid fa-backward" onclick="prevTrack()"></i></label>
+                    <label><i class="fa-solid fa-play" onclick="playpauseTrack()"></i></label>
+                    <label><i class="fa-solid fa-forward" onclick="nextTrack()"></i></label>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="scrollable-page">
+      <div class="scrollable-page-logo">
+            <h1 class="vins">VINS&nbsp;</h1><h1>MUSIC</h1>
+        </div>
+
+        <section class='scrollable-page-discover'>
+            <h1 class="scrollable-page-discover-title">Descobrir</h1>
+            <div class="scrollable-page-discover-display">
+                <a href="">
+                    <div class="scrollable-page-discover-item">
+                        <h1>- (Deluxe)</h1>
+                        <p>Ed Sheeran</p>
+                        <img src="imgs/Rectangle 370.png" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="scrollable-page-discover-item">
+                        <h1>Chemical - Single</h1>
+                        <p>Post Malone</p>
+                        <img src="imgs/Rectangle 371.png" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="scrollable-page-discover-item">
+                        <h1>LITTLE LOVE (DELUXE) - EP</h1>
+                        <p>MC Cabelinho</p>
+                        <img src="imgs/Rectangle 372.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </section>
+    
+
+        <section class='scrollable-page-discover'>
+            <h1 class="scrollable-page-discover-title">Gêneros mais tocados</h1>
+            <div class="scrollable-page-display-gen">
+                <a href=""><div class="scrollable-page-gen">
+                    <img src="imgs/sertanejo-logo.webp" alt="">
+                </div></a>
+                <a href=""><div class="scrollable-page-gen">
+                    <img src="imgs/rock-logo.webp" alt="">
+                </div></a>
+                <a href=""><div class="scrollable-page-gen">
+                    <img src="imgs/funk-carioca-logo.webp" alt="">
+                </div></a>
+                <a href=""><div class="scrollable-page-gen">
+                    <img src="imgs/hip-hop-logo.webp" alt="">
+                </div></a>
+                <a href=""><div class="scrollable-page-gen">
+                    <img src="imgs/eletronica-logo.webp" alt="">
+                </div></a>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
